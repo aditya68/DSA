@@ -35,8 +35,8 @@ int qur(int a,int b)
     int c=0;
     while(a<=b)
     {
-        if(a&1)c+=seg[a++];
-        if(~b&1)c+=seg[b--];
+        if(a&1)c+=seg[a++]; // a is right child.
+        if(~b&1)c+=seg[b--]; // b is left child.
         a>>=1; b>>=1;
     }
     return c;

@@ -44,7 +44,7 @@ void rmv(string s)
     leaf[node]--;
     return;
 }
-bool isprs(string s)
+bool qur(string s)
 {
     int node=0;
     for(int i=0;i<s.size();i++)
@@ -68,7 +68,7 @@ void solve()
         else if(ty==2)rmv(s);
         else
         {
-            if(isprs(s))cout<<"YES";
+            if(qur(s))cout<<"YES";
             else cout<<"NO";
             cout<<endl;
         }

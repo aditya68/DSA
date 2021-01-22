@@ -50,9 +50,8 @@ bool qur(string s)
     for(int i=0;i<s.size();i++)
     {
         int k=s[i]-'a';
-        if(!tre[node][k])return 0;
+        if(!tre[node][k]||!cnt[tre[node][k]])return 0;
         node=tre[node][k];
-        if(!cnt[node])return 0;
     }
     if(!leaf[node])return 0;
     return 1;

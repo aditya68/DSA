@@ -22,7 +22,7 @@ void solve()
 {
     // Sieve of Eratosthenes.
     // takes O(Nloglog(N)) time
-    for(int i=1;i<N;i++)ispr[i]=1;
+    for(int i=2;i<N;i++)ispr[i]=1;
     for(int i=2;i<N;i++)
     {
         if(!ispr[i])continue;

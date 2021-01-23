@@ -35,7 +35,7 @@ void dfs(int t,int p)
             mn[t]=min(mn[t],mn[ch]);
             if(mn[ch]>tin[t])bdg.pb({t+1,ch+1});
         }
-        else mn[t]=min(mn[t],mn[ch]);
+        else mn[t]=min(mn[t],tin[ch]);
     }
     return;
 }

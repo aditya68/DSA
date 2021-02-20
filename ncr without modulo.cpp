@@ -20,7 +20,7 @@ const int N=1e5+5;
 int ncr[65][65];
 void init()
 {
-    ncr[1][0]=ncr[1][1]=1;
+    ncr[0][0]=ncr[1][0]=ncr[1][1]=1;
     for(int i=2;i<65;i++)for(int j=0;j<=i;j++)
     {
         if(!j)
